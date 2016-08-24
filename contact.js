@@ -8,9 +8,7 @@ $(document).ready(function() {
 
 	/* Used this style of hover instead of css because it kept the
 	   icon hovered as it scrolled up and stayed that way until
-	   the mouse was moved, this as the next function fixed it */
-	   
-
+	   the mouse was moved, this as the next function fixed it */   
 	$('.fa').hover(
 		function() {
 			if(up && ($(this).attr('class')) == "fa fa-envelope-square fa-5x hovering" ){
@@ -50,6 +48,12 @@ $(document).ready(function() {
 			up = false;
 		}
 	});
+
+	var $sub = $("#_subject");
+	/* appends to subject line to prevent all emails in 1 thread*/
+    $("#email").on("input", function() {
+        $sub.val("Blog Contact Form (" + $(this).val() + ")");
+    });
 
 	$('.form-input').keydown(function(e) {
 	  if(e.keyCode == 13) { // for enter key
