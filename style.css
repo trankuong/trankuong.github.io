@@ -1,0 +1,367 @@
+/* To fix weird display on different browers */
+
+* {
+    margin: 0;
+    background: transparent;
+}
+
+/* To adjust content height to fit text */
+@media only screen and (max-height: 730px) {
+
+  #About {
+    height: 700px;
+  }
+
+  #Contact {
+  	height: 700px;
+  }
+
+}
+
+/* **************************************** */
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header, nav {
+	margin-top: 0px;
+}
+
+
+header {
+	background-color: #333;
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 100%;
+	height: 8vh;
+	position: fixed;
+}
+
+header h1 {
+	padding: 0;
+	float: left;
+	color: white;
+	font-size: 5vh;
+	margin-left: 1.5vw;
+}
+
+/*********************** Nav Bar **********************/
+
+#nav ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  float: right;
+  height: 8vh;
+}
+
+#nav li {
+	float: left;
+}
+
+#nav li a {
+	height: 8vh;
+	display: block;
+  color: white;
+  text-align: center;
+  padding: 2.5vh 3vw;
+  text-decoration: none;
+  font-size: 2.5vh;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#Cover {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 8vh;
+}
+
+.content {
+	height: 92vh;
+	width: 100%;
+	text-align: center;
+}
+
+.section-title {
+	color: white;
+	font-size: 7vh;
+	padding: 15px;
+}
+
+/****************** Top section **********************/
+
+#Top {
+	height: 92vh;
+	padding: 0;
+	background-repeat: no-repeat;
+}
+
+#Top h1 {
+	text-align: center;
+	padding-top: 25vh;
+	font-size: 8vh;
+}
+
+.see-through {
+	background-color: rgba(255,255,255,0.5);
+}
+
+
+#Top .image-nav {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#Top #arrow-prev {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+#Top #arrow-next {
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+#Top .slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#Top .slider-dots li {
+	cursor: pointer;
+  color: #043F80;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+#Top .slider-dots li.active-dot {
+  color: black;
+}
+
+.background0 {
+	background-image: url("images/city-top.jpg");
+	background-size: 100vw 92vh;
+}
+
+.background1 {
+	background-image: url("images/bridge-dawn.jpg");
+	background-size: 100vw 92vh;
+}
+
+.background2 {
+	background-image: url("images/building.jpg");
+	background-size: 100vw 92vh;
+}
+
+.background3 {
+	background-image: url("images/mountains.jpg");
+	background-size: 100vw 92vh;
+}
+
+.background4 {
+	background-image: url("images/michigan.jpg");
+	background-size: cover;
+}
+
+.background5 {
+	background-image: url("images/lights.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/***************** About Section *********************/
+
+#About {
+	background-color: #1665f0;
+}
+
+#About #pic img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+#About #info-basic {
+	padding-top: 2vh;
+	color: white;
+}
+
+#About #info-basic p {
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+#About #bio {
+	width: 700px;
+	margin: 0 auto;
+	text-align: left;
+	color: white;
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+#About #bio p {
+	padding: 6px;
+}
+
+#About #resume-btn {
+	margin-top: 40px;
+	text-align: center;
+}
+
+#About #resume-btn a {
+	padding: 10px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: white;
+	cursor: pointer;
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}
+
+/******************** Education *************************/
+
+#Education {
+	background-color: #ff1513;
+}
+
+#Projects {
+	background-color: #C678FF;
+}
+
+
+/******************* Contact section ***********************/
+
+#Contact {
+	background-color: #FFD800;
+}
+
+#Contact #icons {
+	position: relative;
+	top: 20vh;
+	margin-bottom: 20px;
+}
+
+#Contact #icons a { 
+	/*got rid or weird underline in display */
+	text-decoration: none;
+}
+
+#Contact #icons .fa {
+	margin-right: 20px;
+}
+
+#Contact #icons .fa-envelope-square {
+	color: red;
+	cursor: pointer;
+}
+
+#Contact #icons .fa-linkedin-square {
+	color: #0B2B5C;
+}
+
+#Contact #icons .fa-github-square {
+	color: #041720;
+}
+
+#Contact #icons .hovering {
+	color: #7f7f7f;
+}
+
+#Contact #contactform .form-input {
+	background-color: white;
+	color: black;
+}
+
+.hide {
+	display: none;
+}
+
+#Contact #email-wind {
+	background-color: #D4C6FF;
+	width: 720px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: left;
+}
+
+#Contact #email-wind-title h1 {
+	width: 100%;
+}
+
+#Contact #email-wind p {
+	display: inline-block;
+}
+
+#Contact #email-wind-title {
+	background-color: #204DFF;
+	/*background-color: #8F9BE9;*/
+	width: 720px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+.form-input {
+	font-family: arial;
+}
+
+#Contact #contactform {
+	display: block;
+}
+
+#Contact input[type=text], input[type=email] {
+	width: 400px;
+	margin-top: 8px;
+	padding: 6px;
+}
+
+#Contact textarea {
+	margin-top: 20px;
+	width: 700px;
+	height: 150px;
+	padding: 5px;
+}
+
+#Contact input[type=submit] {
+	width: 100px;
+	height: 40px;
+	border-radius: 10%;
+	color: white;
+}
+
+.active-button { 
+	background-color: blue;
+	cursor: pointer;
+}
+
+.disabled-button {
+	pointer-events: none;
+	background-color: grey;
+	cursor: default;
+}
+
+#contactform p {
+	color: red;
+}

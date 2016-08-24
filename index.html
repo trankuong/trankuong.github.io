@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	<title> Kuong Tran </title>
+</head>
+
+
+<body>
+
+<header id="header">
+	<div><a href=""><h1>Kuong Tran</h1></a></div>
+	<nav id="nav">
+		<ul>
+			<li><a href="#About">About</a></li>
+			<li><a href="#Education">Education</a></li>
+			<!--
+			<li><a href="#Projects">Projects</a></li>
+			-->
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id="Cover"></div>
+
+<div id="Top" class="content background0">
+	<h1><div class="see-through">Hello, World!</div></h1>
+
+
+	<div class="image-nav">
+    <a href="#" id="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+    <ul class="slider-dots">
+      <li class="dot active-dot">&bull;</li>
+      <li class="dot">&bull;</li>
+      <li class="dot">&bull;</li>
+      <li class="dot">&bull;</li>
+      <li class="dot">&bull;</li>
+      <li class="dot">&bull;</li>
+    </ul>
+    <a href="#" id="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+  </div> 
+
+</div>
+	
+<div class="content" id="About" >
+
+	<h3 class="section-title"> About </h3>
+
+	<div id="info-basic">
+		<div id="pic"> <img src="images/me.jpg"> </div>
+		<p>Student &bull; Economist &bull; Programmer &bull; Traveler</p>
+	</div>
+
+	<div id = "bio">
+		<p>Hey, my name is Kuong Tran.</p> 
+		<p> I am currently a senior at the University of Michigan. My two greatest interests are  programming and economics. My dream is to be able to incorporate both into new and exciting ideas.</p> 
+		<p>Feel free to check out my resume below or reach me through my contact information.</p>
+	</div>
+
+	<div id="resume-btn">
+		<a href="https://www.google.com" target="blank">Resume</a>
+	</div>
+
+</div>
+
+
+<div class="content" id="Education">
+
+	<h3 class="section-title"> Education </h3> 
+
+	<div>
+		<p> </p>
+		<p> </p>
+	</div>
+
+</div>
+
+<!--- To Be Updated Later
+
+<div class="content" id="Projects">
+
+	<h1> Projects </h1>
+
+</div>
+
+-->
+
+
+<div class="content" id="Contact">
+
+	<h3 class="section-title"> Contact </h3>
+
+	<div id="icons">
+		<i class="fa fa-envelope-square fa-5x"></i>
+		<a href="https://www.linkedin.com/in/trankuong" target="_blank">
+			<i class="fa fa-linkedin-square fa-5x"></i>
+		</a>
+		<a href="https://www.github.com/trankuong" target="_blank">
+			<i class="fa fa-github-square fa-5x"></i>
+		</a>
+	</div>
+
+
+<!---  For email entry using fromspring-->
+	<div id="email-wind" class="hide">
+
+	<div id="email-wind-title">
+	<h1>Email Me</h1>
+	<p>You can send me an email down below or reach me at Kuon</p><p>g@</p><p>umi</p><p>ch.edu</p>
+	</div>
+
+	<form id="contactform" method="POST">
+    <input id="name" class="form-input" type="text" name="name" placeholder="Name">
+    <input id="email" class="form-input" type="email" name="_replyto" placeholder="Email">
+    <input id="confirm" class="form-input" type="email" placeholder="Confirm Email">
+    <textarea id="message" class="form-input" name="message" placeholder="Message"></textarea>
+    <input id="_subject" type="hidden" name="_subject" value="Personal Website Contact" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input class="disabled-button" type="submit" value="Send">
+    <p id="warning">Please fill in all areas before sending.</p>
+	</form>
+	</div>
+<!--- Script to hide email from possible spam targeting -->
+	<script>
+	    var contactform =  document.getElementById('contactform');
+	    contactform.setAttribute('action', '//formspree.io/' + 'kuong' + '@' + 'umich' + '.' + 'edu');
+	</script>
+
+</div>
+
+
+</div>
+
+
+
+<script text="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="scroll.js"></script>
+<script src="pics.js"></script>
+<script src="contact.js"></script>
+</body>
+
+</html>
