@@ -374,7 +374,7 @@ tbody tr:nth-child(odd) {
 	padding: 6px;
 }
 
-#Contact textarea {
+#Contact #input[type=message] {
 	margin-top: 20px;
 	width: 700px;
 	height: 150px;
