@@ -226,6 +226,10 @@ li a:hover {
 	text-align: center;
 }
 
+#About #resume-btn a:hover {
+	background-color: #f37169;
+}
+
 #About #resume-btn a {
 	padding: 10px;
 	border-style: solid;
