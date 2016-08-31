@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+
 	<title> Kuong Tran </title>
 </head>
 
@@ -70,14 +71,29 @@
 </div>
 
 
-<div class="content" id="Education">
+<div class="content" id="Education" ng-app="education" ng-controller="MainController" ng-cloak>
 
 	<h3 class="section-title"> Education </h3> 
 
-	<div>
-		<p> </p>
-		<p> </p>
+	<div id="edu-info">
+		<p>I am currently a senior double majoring in Economics and Computer Science at the University of Michigan. I plan to graduate April, 2017.</p>
+		<br>
+		<p><u>GPA</u></p>
+		<p>Overall: 3.459/4.0</p>
+		<p>Economics: 3.54/4.0</p>
+		<p>Computer Science: 3.37/4.0</p>
+<!-- Updating Soon
+		<button ng-click="toggle_major()">Major Courses</button>
+		<button ng-click="toggle_trans()">Transcript</button>
+-->
 	</div>
+
+<!-- Updating Soon
+	<major-info/>
+	<div id="ang-display" ng-repeat="course in courses">
+		<p> {{course.type}} {{course.number}} </p>
+	</div>
+-->
 
 </div>
 
@@ -97,11 +113,11 @@
 	<h3 class="section-title"> Contact </h3>
 
 	<div id="icons">
-		<i class="fa fa-envelope-square fa-5x"></i>
-		<a href="https://www.linkedin.com/in/trankuong" target="_blank">
+		<i title="Email" class="fa fa-envelope-square fa-5x"></i>
+		<a title="LinkedIn" href="https://www.linkedin.com/in/trankuong" target="_blank">
 			<i class="fa fa-linkedin-square fa-5x"></i>
 		</a>
-		<a href="https://www.github.com/trankuong" target="_blank">
+		<a title="Github" href="https://www.github.com/trankuong" target="_blank">
 			<i class="fa fa-github-square fa-5x"></i>
 		</a>
 	</div>
@@ -140,9 +156,24 @@
 
 
 <script text="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="scroll.js"></script>
-<script src="pics.js"></script>
-<script src="contact.js"></script>
+
+<!-- Updating soon
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+-->
+
+<script src="jquery/scroll.js"></script>
+<script src="jquery/pics.js"></script>
+<script src="jquery/contact.js"></script>
+
+<!-- Angular -->
+<!-- Updating Soon
+<script src="angular/app.js"></script>
+<script src="angular/controllers/MainController.js"></script>
+
+<script src="angular/directives/majorInfo.js"></script>
+<script src="angular/directives/transInfo.js"></script>
+-->
+
 </body>
 
 </html>
