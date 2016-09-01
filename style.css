@@ -244,7 +244,7 @@ li a:hover {
 /******************** Education *************************/
 
 #Education {
-	background-color: #628698;
+	background-color: #E86850;
 }
 
 #Education #edu-info {
@@ -291,7 +291,7 @@ tbody tr:nth-child(odd) {
 /******************* Contact section ***********************/
 
 #Contact {
-	background-color: #d4ae0e;
+	background-color: #f9be02;
 }
 
 #Contact #icons {
@@ -353,7 +353,6 @@ tbody tr:nth-child(odd) {
 
 #Contact #email-wind-title {
 	background-color: #204DFF;
-	/*background-color: #8F9BE9;*/
 	width: 720px;
 	margin-top: -10px;
 	margin-left: -10px;
@@ -403,5 +402,6 @@ tbody tr:nth-child(odd) {
 }
 
 #contactform p {
+	font-weight: bold;
 	color: red;
 }
