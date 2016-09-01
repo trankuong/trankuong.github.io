@@ -189,7 +189,7 @@ li a:hover {
 /***************** About Section *********************/
 
 #About {
-	background-color: #1665f0;
+	background-color: #2A5B84;
 }
 
 #About #pic img{
@@ -244,9 +244,7 @@ li a:hover {
 /******************** Education *************************/
 
 #Education {
-	background-color: #ca1d27;
-	/*background-color: #06e865;
-	background-color: #ff1513;*/
+	background-color: #628698;
 }
 
 #Education #edu-info {
@@ -293,8 +291,7 @@ tbody tr:nth-child(odd) {
 /******************* Contact section ***********************/
 
 #Contact {
-	background-color: #e7d500;
-	/*background-color: #Ffe207;*/
+	background-color: #d4ae0e;
 }
 
 #Contact #icons {
