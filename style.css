@@ -244,8 +244,9 @@ li a:hover {
 /******************** Education *************************/
 
 #Education {
-	background-color: #06e865;
-	/*background-color: #ff1513;*/
+	background-color: #ca1d27;
+	/*background-color: #06e865;
+	background-color: #ff1513;*/
 }
 
 #Education #edu-info {
@@ -292,7 +293,8 @@ tbody tr:nth-child(odd) {
 /******************* Contact section ***********************/
 
 #Contact {
-	background-color: #Ffe207;
+	background-color: #e7d500;
+	/*background-color: #Ffe207;*/
 }
 
 #Contact #icons {
